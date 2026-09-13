@@ -32,29 +32,11 @@
   z-index: 2;
 }
 
-.textSub {
-  position: relative;
-  left: 150;
-  bottom: -130;
-}
-
-.h2 {
-  font-size: 30;
-  font-weight: bold;
-}
-
-.Btn {
-  border: 1px solid black;
-  border-radius: 999px;
-  padding: 0.9rem 1.5rem;
-  background: white;
-  cursor: pointer;
-  font-size: 13;
-}
-
 .btnParent {
   display: flex;
   justify-content: end;
+  position: relative;
+  left: -160;
 }
 
 .buttons {
@@ -68,13 +50,16 @@
 }
 
 .btnLink1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   width: 140px;
   border: 1px solid black;
   border-radius: 999px;
-  padding: 0.9rem 3rem;
+  padding: 0.9rem 1.5rem;
   background: white;
   cursor: pointer;
-  font-size: 13;
+  font-size: 12;
 }
 
 .btnLink2 {
