@@ -1,5 +1,9 @@
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import "./page";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export default function DashboardLayout({
   children,
@@ -9,7 +13,7 @@ export default function DashboardLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <main className={plusJakarta.className}>{children}</main>
       </body>
     </html>
   );
