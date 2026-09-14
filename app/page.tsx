@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 
 import {
@@ -14,10 +15,10 @@ export default function Page() {
       <header className="nav">
         <p className="btnLink2">Available for New Project</p>
         <div className="links">
-          <a href="/work">Work</a>
-          <a href="/service">Service</a>
-          <a href="/experince">Experience</a>
-          <a href="/contact">Contact</a>
+          <Link href="/work">Work</Link>
+          <Link href="/service">Service</Link>
+          <Link href="/experince">Experience</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <button
           style={{
