@@ -1,75 +1,72 @@
+@import "tailwindcss";
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
 }
+
 .links {
   display: flex;
   gap: 2rem;
 }
-.links a {
-  text-decoration: none;
-  color: black;
+
+.textHero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12rem;
+  transform: scaleX(1.3);
+  z-index: 1;
 }
-.signInBtn {
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin: -330;
+  z-index: 2;
+}
+
+.btnParent {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: -160;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  top: -50px;
+  left: -100px;
+}
+
+.btnLink1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
   border: 1px solid black;
   border-radius: 999px;
   padding: 0.9rem 1.5rem;
   background: white;
   cursor: pointer;
+  font-size: 12;
+}
+
+.btnLink2 {
+  border: 1px solid black;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  background: white;
+  cursor: pointer;
   font-size: 13;
-}
-
-.heroSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 3rem;
-  padding: 3rem 2rem 0;
-}
-.heroTitle {
-  font-size: 9rem;
-  font-weight: 900;
-  line-height: 1.05;
-  margin: 0;
-  max-width: 60%;
-  margin-top: 210px;
-  margin-left: -5px;
-}
-.heroAside {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1.5rem;
-  max-width: 340px;
-  flex-shrink: 0;
-}
-.heroPhoto {
-  border-radius: 15px;
-  margin-bottom: 110px;
-  margin-top: -50px;
-  object-fit: cover;
-  width: 75%;
-  height: 350;
-}
-.heroBlurb {
-  text-align: right;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.logoWrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.logoWrapper img {
-  object-fit: contain;
-  width: unset !important;
-  height: 48px !important;
-  border-radius: 50;
 }
