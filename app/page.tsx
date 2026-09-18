@@ -12,78 +12,42 @@ import {
 export default function Page() {
   return (
     <>
-      <header className="nav">
-        <p className="btnLink2">Available for New Project</p>
-        <div className="links">
-          <Link href="/work">Work</Link>
-          <Link href="/service">Service</Link>
-          <Link href="/experince">Experience</Link>
-          <Link href="/contact">Contact</Link>
+      <header className="flex items-center justify-between px-8 py-6">
+        <p className="border border-black rounded-full py-2 px-6 bg-white cursor-pointer text-[14px]">
+          Available for New Project
+        </p>
+        <div className="flex gap-8">
+          <a href="/work">Work</a>
+          <a href="/service">Service</a>
+          <a href="/experince">Experience</a>
+          <a href="/contact">Contact</a>
         </div>
-        <button
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 15,
-            width: "50",
-            position: "relative",
-            border: "1px solid black",
-            borderRadius: "999px",
-            padding: "0.5rem 1rem",
-            background: "white",
-            cursor: "pointer",
-            fontSize: 13,
-          }}
-        >
-          <span style={{ marginLeft: 10 }}>Lets Talk</span>{" "}
+        <button className="flex items-center gap-[15px] w[50px] relative border border-black rounded-full px-4 py-2 bg-white cursor-pointer text-[14px]">
+          <span className="ml-[10px]">Lets Talk</span>{" "}
           <ArrowUpRightIcon size={15} />
         </button>
       </header>
 
       <main>
         <section>
-          <h1 className="textHero">Hurve-en</h1>
+          <h1 className="relative -top-[30px] flex justify-center items-center text-[12rem] scale-x-[1.4] z-[1]">
+            Hurve-en
+          </h1>
 
-          <h2
-            style={{
-              fontSize: 30,
-              fontWeight: 700,
-              position: "relative",
-              right: "-200px",
-              bottom: "-90px",
-            }}
-          >
+          <h2 className="text-[30px] font-bold relative -right-[200px] -bottom-[90px]">
             Full-Stack Developer
           </h2>
-          <p
-            style={{ position: "relative", right: "-200px", bottom: "-105px" }}
-          >
+          <p className="relative -right-[200px] -bottom-[105px]">
             Developing meaningful apps <br />
             that help people on a daily basis.
           </p>
 
-          <button
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "26px",
-              width: "230px",
-              position: "relative",
-              right: "-200px",
-              bottom: "-130px",
-              border: "1px solid black",
-              borderRadius: "999px",
-              padding: "0.5rem 0.9rem",
-              background: "white",
-              cursor: "pointer",
-              fontSize: 15,
-            }}
-          >
-            <span style={{ marginLeft: 20 }}>Let&apos;s Collaborate</span>
+          <button className="flex items-center gap-[26px] w-[230px] relative -right-[200px] -bottom-[130px] border border-black rounded-full px-[0.9rem] py-2 bg-white cursor-pointer text-[15px]">
+            <span className="ml-5">Let&apos;s Collaborate</span>
             <ArrowUpRightIcon size={20} />
           </button>
 
-          <div className="imageContainer">
+          <div className="relative -top-[370px] flex justify-center items-center z-[2]">
             <Image
               src="/Kenshin.png"
               alt="pfp"
@@ -93,17 +57,17 @@ export default function Page() {
             />
           </div>
 
-          <div className="btnParent">
-            <div className="buttons">
-              <button className="btnLink1">
+          <div className="flex justify-end relative -left-[160px] -top-[710px]">
+            <div className="flex flex-col items-start gap-[30px] relative -top-[50px] -left-[100px]">
+              <button className="flex items-center gap-[10px] w-[140px] border border-black rounded-full px-6 py-[0.9rem] bg-white cursor-pointer text-[12px]">
                 <GithubLogoIcon size={24} />
                 Github
               </button>
-              <button className="btnLink1">
+              <button className="flex items-center gap-[10px] w-[140px] border border-black rounded-full px-6 py-[0.9rem] bg-white cursor-pointer text-[12px]">
                 <InstagramLogoIcon size={24} />
                 Instagram
               </button>
-              <button className="btnLink1">
+              <button className="flex items-center gap-[10px] w-[140px] border border-black rounded-full px-6 py-[0.9rem] bg-white cursor-pointer text-[12px]">
                 <LinkedinLogoIcon size={24} />
                 LinkedIn
               </button>
