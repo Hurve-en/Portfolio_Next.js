@@ -17,10 +17,10 @@ export default function Page() {
           Available for New Project
         </p>
         <div className="flex gap-8">
-          <a href="/work">Work</a>
-          <a href="/service">Service</a>
-          <a href="/experince">Experience</a>
-          <a href="/contact">Contact</a>
+          <Link href="/work">Work</Link>
+          <Link href="/service">Service</Link>
+          <Link href="/experince">Experience</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <button className="flex items-center gap-[15px] w[50px] relative border border-black rounded-full px-4 py-2 bg-white cursor-pointer text-[14px]">
           <span className="ml-[10px]">Lets Talk</span>{" "}
