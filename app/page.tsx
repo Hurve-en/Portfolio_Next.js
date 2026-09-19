@@ -17,9 +17,9 @@ export default function Page() {
           Available for New Project
         </p>
         <div className="flex gap-8">
-          <Link href="/work">Work</Link>
+          <Link href="/work/slug">Work</Link>
           <Link href="/service">Service</Link>
-          <Link href="/experince">Experience</Link>
+          <Link href="/experience">Experience</Link>
           <Link href="/contact">Contact</Link>
         </div>
         <button className="flex items-center gap-[15px] w[50px] relative border border-black rounded-full px-4 py-2 bg-white cursor-pointer text-[14px]">
@@ -57,7 +57,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex justify-end relative -left-[160px] -top-[710px]">
+          <div className="flex justify-end relative -left-[160px] -top-[730px]">
             <div className="flex flex-col items-start gap-[30px] relative -top-[50px] -left-[100px]">
               <button className="flex items-center gap-[10px] w-[140px] border border-black rounded-full px-6 py-[0.9rem] bg-white cursor-pointer text-[12px]">
                 <GithubLogoIcon size={24} />
